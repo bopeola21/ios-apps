@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="txh-c4-BmD">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PrV-Mh-cGi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcR-dA-Gw3">
+                                <rect key="frame" x="16" y="20" width="568" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="QYb-Ty-PRW"/>
+                                    <constraint firstAttribute="height" constant="60" id="STH-Ir-5Dl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="a1u-iS-Sog"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QYb-Ty-PRW"/>
+                                        <exclude reference="a1u-iS-Sog"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ces-Sc-ZNl" customClass="PrettyButton">
+                                <rect key="frame" x="16" y="148" width="568" height="116"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="WhC-74-p0c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="290" width="368" height="116"/>
+                                </variation>
+                                <connections>
+                                    <action selector="bigButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7LW-lI-XNX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lcR-dA-Gw3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="0W1-9F-cp9"/>
+                            <constraint firstItem="lcR-dA-Gw3" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="27t-0F-eQg"/>
+                            <constraint firstItem="ces-Sc-ZNl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="5mJ-ie-gvk"/>
+                            <constraint firstItem="txh-c4-BmD" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="8Mp-ZY-QS1"/>
+                            <constraint firstItem="ces-Sc-ZNl" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="CRd-NH-ECN"/>
+                            <constraint firstItem="lcR-dA-Gw3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Mz4-RX-Tij"/>
+                            <constraint firstItem="ces-Sc-ZNl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="NES-Ak-8TN"/>
+                            <constraint firstItem="ces-Sc-ZNl" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Nq0-96-Yrn"/>
+                            <constraint firstItem="lcR-dA-Gw3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="P2u-sh-yOQ"/>
+                            <constraint firstItem="lcR-dA-Gw3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="RSy-Te-M3s"/>
+                            <constraint firstItem="lcR-dA-Gw3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="WIp-XD-7w0"/>
+                            <constraint firstItem="txh-c4-BmD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="XNp-2E-t4h"/>
+                            <constraint firstItem="lcR-dA-Gw3" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="chc-4e-nb1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ces-Sc-ZNl" secondAttribute="bottom" constant="20" id="gCy-9w-dkP"/>
+                            <constraint firstItem="txh-c4-BmD" firstAttribute="top" secondItem="ces-Sc-ZNl" secondAttribute="bottom" constant="21" id="mQn-mc-95d"/>
+                            <constraint firstItem="txh-c4-BmD" firstAttribute="top" secondItem="lcR-dA-Gw3" secondAttribute="bottom" constant="157" id="nBS-1s-EEn"/>
+                            <constraint firstItem="lcR-dA-Gw3" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="qFH-E3-EaI"/>
+                            <constraint firstAttribute="centerY" secondItem="txh-c4-BmD" secondAttribute="centerY" id="sgl-y4-dSB"/>
+                            <constraint firstItem="lcR-dA-Gw3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="xl2-0X-ESd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0W1-9F-cp9"/>
+                                <exclude reference="27t-0F-eQg"/>
+                                <exclude reference="Mz4-RX-Tij"/>
+                                <exclude reference="P2u-sh-yOQ"/>
+                                <exclude reference="RSy-Te-M3s"/>
+                                <exclude reference="qFH-E3-EaI"/>
+                                <exclude reference="NES-Ak-8TN"/>
+                                <exclude reference="Nq0-96-Yrn"/>
+                                <exclude reference="nBS-1s-EEn"/>
+                                <exclude reference="gCy-9w-dkP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="lcR-dA-Gw3" id="8KB-oh-C6q"/>
+                        <outlet property="myTextField" destination="txh-c4-BmD" id="ZUX-Yr-7H2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
