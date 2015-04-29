@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		080D0A3E1A5EC9E7004C8472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 080D0A3D1A5EC9E7004C8472 /* main.m */; };
 		080D0A411A5EC9E7004C8472 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 080D0A401A5EC9E7004C8472 /* AppDelegate.m */; };
-		080D0A441A5EC9E7004C8472 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080D0A431A5EC9E7004C8472 /* ViewController.m */; };
-		080D0A471A5EC9E7004C8472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080D0A451A5EC9E7004C8472 /* Main.storyboard */; };
 		080D0A491A5EC9E7004C8472 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 080D0A481A5EC9E7004C8472 /* Images.xcassets */; };
 		080D0A4C1A5EC9E7004C8472 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080D0A4A1A5EC9E7004C8472 /* LaunchScreen.xib */; };
 		080D0A581A5EC9E7004C8472 /* GitHubFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 080D0A571A5EC9E7004C8472 /* GitHubFriendsTests.m */; };
+		080D0A631A5ECB8A004C8472 /* FriendsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 080D0A621A5ECB8A004C8472 /* FriendsTVC.m */; };
+		080D0A661A5ECBB4004C8472 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 080D0A651A5ECBB4004C8472 /* FriendCell.m */; };
+		080D0A691A5EE366004C8472 /* NewFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 080D0A681A5EE366004C8472 /* NewFriendVC.m */; };
+		080D0A6C1A5EE383004C8472 /* FriendDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 080D0A6B1A5EE383004C8472 /* FriendDetailVC.m */; };
+		080D0A701A602FAF004C8472 /* FriendDetailVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 080D0A6F1A602FAF004C8472 /* FriendDetailVC1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,21 @@
 		080D0A3D1A5EC9E7004C8472 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		080D0A3F1A5EC9E7004C8472 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		080D0A401A5EC9E7004C8472 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		080D0A421A5EC9E7004C8472 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		080D0A431A5EC9E7004C8472 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		080D0A461A5EC9E7004C8472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		080D0A481A5EC9E7004C8472 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		080D0A4B1A5EC9E7004C8472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		080D0A511A5EC9E7004C8472 /* GitHubFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		080D0A561A5EC9E7004C8472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		080D0A571A5EC9E7004C8472 /* GitHubFriendsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubFriendsTests.m; sourceTree = "<group>"; };
+		080D0A611A5ECB8A004C8472 /* FriendsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTVC.h; sourceTree = "<group>"; };
+		080D0A621A5ECB8A004C8472 /* FriendsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTVC.m; sourceTree = "<group>"; };
+		080D0A641A5ECBB4004C8472 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		080D0A651A5ECBB4004C8472 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		080D0A671A5EE366004C8472 /* NewFriendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFriendVC.h; sourceTree = "<group>"; };
+		080D0A681A5EE366004C8472 /* NewFriendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendVC.m; sourceTree = "<group>"; };
+		080D0A6A1A5EE383004C8472 /* FriendDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailVC.h; sourceTree = "<group>"; };
+		080D0A6B1A5EE383004C8472 /* FriendDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailVC.m; sourceTree = "<group>"; };
+		080D0A6E1A602FAF004C8472 /* FriendDetailVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailVC1.h; sourceTree = "<group>"; };
+		080D0A6F1A602FAF004C8472 /* FriendDetailVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailVC1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +91,11 @@
 		080D0A3A1A5EC9E7004C8472 /* GitHubFriends */ = {
 			isa = PBXGroup;
 			children = (
-				080D0A3F1A5EC9E7004C8472 /* AppDelegate.h */,
-				080D0A401A5EC9E7004C8472 /* AppDelegate.m */,
-				080D0A421A5EC9E7004C8472 /* ViewController.h */,
-				080D0A431A5EC9E7004C8472 /* ViewController.m */,
-				080D0A451A5EC9E7004C8472 /* Main.storyboard */,
-				080D0A481A5EC9E7004C8472 /* Images.xcassets */,
-				080D0A4A1A5EC9E7004C8472 /* LaunchScreen.xib */,
+				080D0A6D1A5EE3AA004C8472 /* List */,
+				080D0A671A5EE366004C8472 /* NewFriendVC.h */,
+				080D0A681A5EE366004C8472 /* NewFriendVC.m */,
+				080D0A6E1A602FAF004C8472 /* FriendDetailVC1.h */,
+				080D0A6F1A602FAF004C8472 /* FriendDetailVC1.m */,
 				080D0A3B1A5EC9E7004C8472 /* Supporting Files */,
 			);
 			path = GitHubFriends;
@@ -96,6 +104,12 @@
 		080D0A3B1A5EC9E7004C8472 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				080D0A6A1A5EE383004C8472 /* FriendDetailVC.h */,
+				080D0A6B1A5EE383004C8472 /* FriendDetailVC.m */,
+				080D0A3F1A5EC9E7004C8472 /* AppDelegate.h */,
+				080D0A401A5EC9E7004C8472 /* AppDelegate.m */,
+				080D0A481A5EC9E7004C8472 /* Images.xcassets */,
+				080D0A4A1A5EC9E7004C8472 /* LaunchScreen.xib */,
 				080D0A3C1A5EC9E7004C8472 /* Info.plist */,
 				080D0A3D1A5EC9E7004C8472 /* main.m */,
 			);
@@ -117,6 +131,17 @@
 				080D0A561A5EC9E7004C8472 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		080D0A6D1A5EE3AA004C8472 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				080D0A641A5ECBB4004C8472 /* FriendCell.h */,
+				080D0A651A5ECBB4004C8472 /* FriendCell.m */,
+				080D0A611A5ECB8A004C8472 /* FriendsTVC.h */,
+				080D0A621A5ECB8A004C8472 /* FriendsTVC.m */,
+			);
+			name = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +224,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				080D0A471A5EC9E7004C8472 /* Main.storyboard in Resources */,
 				080D0A4C1A5EC9E7004C8472 /* LaunchScreen.xib in Resources */,
 				080D0A491A5EC9E7004C8472 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				080D0A441A5EC9E7004C8472 /* ViewController.m in Sources */,
 				080D0A411A5EC9E7004C8472 /* AppDelegate.m in Sources */,
+				080D0A701A602FAF004C8472 /* FriendDetailVC1.m in Sources */,
+				080D0A691A5EE366004C8472 /* NewFriendVC.m in Sources */,
+				080D0A631A5ECB8A004C8472 /* FriendsTVC.m in Sources */,
+				080D0A6C1A5EE383004C8472 /* FriendDetailVC.m in Sources */,
 				080D0A3E1A5EC9E7004C8472 /* main.m in Sources */,
+				080D0A661A5ECBB4004C8472 /* FriendCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +272,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		080D0A451A5EC9E7004C8472 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				080D0A461A5EC9E7004C8472 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		080D0A4A1A5EC9E7004C8472 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,6 +366,7 @@
 				INFOPLIST_FILE = GitHubFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,6 +377,7 @@
 				INFOPLIST_FILE = GitHubFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +434,7 @@
 				080D0A5D1A5EC9E7004C8472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		080D0A5E1A5EC9E7004C8472 /* Build configuration list for PBXNativeTarget "GitHubFriendsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +443,7 @@
 				080D0A601A5EC9E7004C8472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -30,10 +30,6 @@
 
 @property (strong, nonatomic) MPMoviePlayerController *videoController;
 
-//@property (strong, nonatomic) NSURL *videoURL;
-
-//@property (strong, nonatomic) MPMoviePlayerController *videoController;
-
 @end
 
 @implementation ViewController
@@ -171,9 +167,20 @@
 if (self.mediaChoiceButton.selectedSegmentIndex == 1) {
     [self.cameraPickerController startVideoCapture];
     
+//    self.takeMediaButton.layer.cornerRadius = 0;
+//    self.takeMediaButton.layer.masksToBounds = YES;
+//    [self.view addSubview:self.takeMediaButton];
+    
+    
+    btnImage = [UIImage imageNamed:@"recordButtonStop.png"];
+    
     self.takeMediaButton.layer.cornerRadius = 0;
     self.takeMediaButton.layer.masksToBounds = YES;
-    [self.view addSubview:self.takeMediaButton];
+    
+    [self.takeMediaButton setImage:btnImage forState:UIControlStateNormal];
+    
+    self.takeMediaButton.backgroundColor = [UIColor clearColor];
+
     
 
 }
@@ -232,11 +239,28 @@ if (self.mediaChoiceButton.selectedSegmentIndex == 1) {
     
     [self.videoController setContentURL:self.videoURL];
     
-    FilterViewController * filterVC = [self.storyboard instantiateViewControllerWithIdentifier:@"filterVC"];
+    UIViewController * playVideoController = [[UIViewController alloc]init];
     
-    [self.navigationController pushViewController:filterVC animated:YES];
+//    [self presentViewController:playVideoController animated:YES completion:nil];
     
-    [filterVC.view addSubview:self.videoController.view];
+    [self.navigationController pushViewController:playVideoController animated:YES];
+    
+    [self.videoController.view setFrame:CGRectMake(0, 50, 320, 460)];
+    
+    [playVideoController.view addSubview:self.videoController.view];
+    
+    [self.videoController play];
+    
+    
+
+    
+  //  FilterViewController * filterVC = [self.storyboard instantiateViewControllerWithIdentifier:@"filterVC"];
+    
+    
+    
+//    [self.navigationController pushViewController:_videoController animated:YES];
+    
+  //  [videoConter.view addSubview:self.videoController.view];
     
     [self.videoController play];
     
