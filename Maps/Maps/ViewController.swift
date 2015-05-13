@@ -42,6 +42,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         lManager.desiredAccuracy = kCLLocationAccuracyBest
         lManager.distanceFilter = kCLDistanceFilterNone
         
+        lManager.pausesLocationUpdatesAutomatically = true
         
         
         lManager.distanceFilter = 1000
@@ -94,13 +95,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func createAnnotationsWithVenues(venues: [AnyObject]) {
         
-        for venue in venues as [[String:AnyObject]] {
+        for venue in venues as! [[String:AnyObject]] {
             
-            let locationInfo = venue["location"] as [String:AnyObject]
-            let venueName = venue["name"] as String
+            let locationInfo = venue["location"] as! [String:AnyObject]
+            let venueName = venue["name"] as! String
             
-            let lat = locationInfo["lat"] as CLLocationDegrees
-            let lng = locationInfo["lng"] as CLLocationDegrees
+            let lat = locationInfo["lat"] as! CLLocationDegrees
+            let lng = locationInfo["lng"] as! CLLocationDegrees
             
         //    CLLocationCoordinate2D c2D = CLLocationCoordinate2DMake(CLLocationDegrees latitude, CLLocationDegrees longitude);
             
@@ -113,8 +114,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             self.mapView.setRegion(region, animated: true)
             
             let annotation = MKPointAnnotation()
+            annotation.coordinate = coordinate
             
-            annotation.setCoordinate(coordinate)
+        //    annotation.setCoordinate(coordinate)
             annotation.title = venueName
             
             
@@ -134,8 +136,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     let locValue:CLLocationCoordinate2D = lManager.location.coordinate
         
         let annotation = MKPointAnnotation()
-        
-        annotation.setCoordinate(locValue)
+        annotation.coordinate = locValue
+    //    annotation.setCoordinate(locValue)
         
     //    myPinView.pinColor = MKPinAnnotationColor.Purple;
         

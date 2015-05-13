@@ -7,25 +7,29 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>521FCDD1-50DB-4C83-8528-A2B22E06E68C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>GitHubFriends</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>58151A1AA077F4B9620464FBE8950B7D987085C7</key>
 		<string>https://github.com/bopeola21/ios-apps.git</string>
+		<key>CD9BAB0B9E09C915262188E1645F7C4F455F9BFE</key>
+		<string>https://github.com/bopeola21/GitHubFriends.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GitHubFriends/GitHubFriends.xcodeproj</string>
+	<string>GitHubFriends.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>58151A1AA077F4B9620464FBE8950B7D987085C7</key>
 		<string>../../..</string>
+		<key>CD9BAB0B9E09C915262188E1645F7C4F455F9BFE</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/bopeola21/ios-apps.git</string>
+	<string>https://github.com/bopeola21/GitHubFriends.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>58151A1AA077F4B9620464FBE8950B7D987085C7</string>
+	<string>CD9BAB0B9E09C915262188E1645F7C4F455F9BFE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>58151A1AA077F4B9620464FBE8950B7D987085C7</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ios-apps</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD9BAB0B9E09C915262188E1645F7C4F455F9BFE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GitHubFriends</string>
 		</dict>
 	</array>
 </dict>
